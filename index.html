@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Serengeti Wonders — Premier African Tourist Attraction</title>
+<link href="css/bootstrap.min.css" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<style>
+:root {
+    --primary: #1b3826;
+    --secondary: #d97706;
+    --gold: #ffc107;
+}
+body {
+    background-color: #fbfbf9;
+    color: #333333;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+h1 {
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+h2 {
+    color: #1b3826;
+    font-weight: 700;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+p {
+    line-height: 1.6;
+    color: #4b5563;
+}
+a {
+    text-decoration: none;
+    color: #1b3826;
+    transition: all 0.2s ease-in-out;
+}
+a:hover {
+    color: #d97706;
+}
+.footer-custom { background-color: #17231c; color: #d1d5db; }
+.carousel-item { height: 480px; background-color: #111; }
+.carousel-item img { object-fit: cover; width: 100%; height: 100%; opacity: 1; }
+.card { transition: transform 0.25s, box-shadow 0.25s; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; overflow: hidden; }
+.card:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(0,0,0,0.12) !important; }
+.card-img-top { height: 180px; object-fit: cover; }
+.img-caption { font-size: 0.75rem; color: #6b7280; font-style: italic; padding: 4px 12px 0; }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:#1b3826;">
+  <div class="container">
+    <a class="navbar-brand text-white fw-bold fs-4" href="index.html">Serengeti Wonders</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link text-warning active fw-semibold" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white-50" href="Destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link text-white-50" href="Tours.html">All Tours</a></li>
+        <li class="nav-item"><a class="nav-link text-white-50" href="Wildlife.html">Wildlife</a></li>
+        <li class="nav-item"><a class="nav-link text-white-50" href="ContactUs.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+    <button data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+    <button data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="5000"><img src="images/serengeti-savannah.jpg" class="d-block w-100" alt="Serengeti Savannah sunrise hot air balloon over wildlife herds"></div>
+    <div class="carousel-item" data-bs-interval="5000"><img src="images/victoria-falls.jpg" class="d-block w-100" alt="Mosi-oa-Tunya Victoria Falls cascading into Batoka Gorge with vibrant rainbow"></div>
+    <div class="carousel-item" data-bs-interval="5000"><img src="images/zanzibar-beach.jpg" class="d-block w-100" alt="Zanzibar Island powder-white coral sand beach with turquoise ocean and wooden dhows"></div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+</div>
+
+<main class="container py-5">
+  <div class="text-center mb-5"><h1 class="text-dark display-5 fw-bold">Serengeti Wonders Sanctuary & Expeditions</h1>
+    <p class="lead text-muted mx-auto" style="max-width:800px;">Experience the grandest terrestrial wildlife spectacles, roaring cataracts, luxury safari lodges, and tropical island coastlines across East Africa.</p></div>
+    <hr>
+  </section>
+
+  <!-- SECTION 1: 3 COLUMNS -->
+  <section class="mb-5">
+    <div class="mb-3">
+      <h2>Section 1: Premier Wildlife Circuits</h2>
+      <p class="text-muted mb-0">Multi-day guided safari circuits through Africa's most revered UNESCO nature reserves.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4"><div class="card h-100 shadow-sm"><div class="card-header bg-dark text-white d-flex justify-content-between py-2"><span class="fw-semibold">Northern Circuit</span><span class="badge bg-warning text-dark">7 Days</span></div><img src="images/serengeti-savannah.jpg" class="card-img-top" alt="Serengeti migration plains and hot air balloon" loading="lazy"><div class="card-body"><h5 class="fw-bold text-success">Serengeti & Ngorongoro</h5><p class="small text-muted">Caldera game drives featuring high predator density, followed by four days tracking migrating herds across Serengeti grasslands.</p></div><div class="card-footer bg-light d-flex justify-content-between align-items-center"><span class="fw-bold text-success fs-5">$2,450</span><a href="Tours.html" class="btn btn-outline-success btn-sm">Explore Tour</a></div></div></div>
+      <div class="col-md-6 col-lg-4"><div class="card h-100 shadow-sm"><div class="card-header bg-dark text-white d-flex justify-content-between py-2"><span class="fw-semibold">Zambezi Odyssey</span><span class="badge bg-info text-dark">5 Days</span></div><img src="images/victoria-falls.jpg" class="card-img-top" alt="Victoria Falls waterfall mists and rainbow" loading="lazy"><div class="card-body"><h5 class="fw-bold text-success">Victoria Falls & Chobe</h5><p class="small text-muted">Roaring cascades at Mosi-oa-Tunya paired with serene sunset boat safaris among huge elephant herds along Chobe River.</p></div><div class="card-footer bg-light d-flex justify-content-between align-items-center"><span class="fw-bold text-success fs-5">$1,880</span><a href="Tours.html" class="btn btn-outline-success btn-sm">Explore Tour</a></div></div></div>
+      <div class="col-md-6 col-lg-4"><div class="card h-100 shadow-sm"><div class="card-header bg-dark text-white d-flex justify-content-between py-2"><span class="fw-semibold">Roof of Africa</span><span class="badge bg-success">8 Days</span></div><img src="images/kilimanjaro-elephants.jpg" class="card-img-top" alt="Elephants beneath snow-capped Mount Kilimanjaro" loading="lazy"><div class="card-body"><h5 class="fw-bold text-success">Kilimanjaro Machame Trek</h5><p class="small text-muted">Traverse five climate zones from dense rainforest to alpine desert and summit Uhuru Peak at 5,895 meters with licensed guides.</p></div><div class="card-footer bg-light d-flex justify-content-between align-items-center"><span class="fw-bold text-success fs-5">$2,190</span><a href="Tours.html" class="btn btn-outline-success btn-sm">Explore Tour</a></div></div></div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: 3 COLUMNS -->
+  <section class="mb-5">
+    <div class="mb-3"><h2>Section 2: Luxury Wilderness Lodges</h2><p class="text-muted mb-0">Exclusive eco-lodges and private tented suites offering five-star comfort in the deep bush.</p></div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4"><div class="card h-100 shadow-sm"><div class="card-header bg-success text-white d-flex justify-content-between py-2"><span class="fw-semibold">Serengeti Mara Camp</span><span class="badge bg-light text-dark">5-Star Luxury</span></div><img src="images/mara-tented-camp.jpg" class="card-img-top" alt="Luxury safari tented suite perched over Mara River" loading="lazy"><div class="card-body"><h5 class="fw-bold">Mara River Deck Suite</h5><p class="small text-muted">Canvas luxury suite with private infinity plunge pool perched above the riverbank, open-air shower, and personal butler.</p></div><div class="card-footer bg-light d-flex justify-content-between align-items-center"><span class="fw-bold text-success fs-5">$680 <span class="fs-6 text-muted fw-normal">/ night</span></span><a href="ContactUs.html" class="btn btn-success btn-sm">Inquire Suite</a></div></div></div>
+      <div class="col-md-6 col-lg-4"><div class="card h-100 shadow-sm"><div class="card-header bg-success text-white d-flex justify-content-between py-2"><span class="fw-semibold">Royal Zambezi Lodge</span><span class="badge bg-light text-dark">Gorge View</span></div><img src="images/zambezi-cliff-lodge.jpg" class="card-img-top" alt="Cliffside luxury lodge villa overlooking Batoka Canyon" loading="lazy"><div class="card-body"><h5 class="fw-bold">Batoka Panoramic Villa</h5><p class="small text-muted">Perched high atop dramatic canyon cliffs with wrap-around sunset viewing decks and private helicopter access.</p></div><div class="card-footer bg-light d-flex justify-content-between align-items-center"><span class="fw-bold text-success fs-5">$540 <span class="fs-6 text-muted fw-normal">/ night</span></span><a href="ContactUs.html" class="btn btn-success btn-sm">Inquire Suite</a></div></div></div>
+      <div class="col-md-6 col-lg-4"><div class="card h-100 shadow-sm"><div class="card-header bg-success text-white d-flex justify-content-between py-2"><span class="fw-semibold">Zanzibar Sands Villa</span><span class="badge bg-light text-dark">Beachfront</span></div><img src="images/zanzibar-villa.jpg" class="card-img-top" alt="Thatched beachfront luxury villa with plunge pool" loading="lazy"><div class="card-body"><h5 class="fw-bold">Swahili Coast Beach Villa</h5><p class="small text-muted">Direct private access to powder white sand beaches, private plunge pool, and sunset catamaran charters.</p></div><div class="card-footer bg-light d-flex justify-content-between align-items-center"><span class="fw-bold text-success fs-5">$490 <span class="fs-6 text-muted fw-normal">/ night</span></span><a href="ContactUs.html" class="btn btn-success btn-sm">Inquire Suite</a></div></div></div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: 4 COLUMNS -->
+  <section class="mb-5">
+    <div class="mb-3">
+      <h2>Section 3: Big Game & Apex Fauna</h2>
+      <p class="text-muted mb-0">Encounter Africa's iconic terrestrial species roaming freely in protected sanctuaries.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3"><div class="card h-100 shadow-sm"><div class="card-header bg-dark text-white py-1 small fw-semibold">Apex Predator</div><img src="images/african-lions.jpg" class="card-img-top" alt="African lion on golden grass" loading="lazy"><div class="card-body py-2"><h5 class="fw-bold text-success mb-1">African Lion Prides</h5><span class="badge bg-danger mb-2">Vulnerable</span><p class="small text-muted mb-0">Dense prides spanning Central Serengeti kopjes, actively hunting at dawn and twilight hours.</p></div><div class="card-footer bg-light py-2"><a href="Wildlife.html" class="small fw-bold text-success">Field Guide &rarr;</a></div></div></div>
+      <div class="col-sm-6 col-lg-3"><div class="card h-100 shadow-sm"><div class="card-header bg-dark text-white py-1 small fw-semibold">Savannah Giant</div><img src="images/kilimanjaro-elephants.jpg" class="card-img-top" alt="African bush elephants beneath Kilimanjaro" loading="lazy"><div class="card-body py-2"><h5 class="fw-bold text-success mb-1">Bush Elephant Herds</h5><span class="badge bg-primary mb-2">Keystone</span><p class="small text-muted mb-0">Matriarch-led family herds traversing ancient migration corridors between Amboseli and Tarangire.</p></div><div class="card-footer bg-light py-2"><a href="Wildlife.html" class="small fw-bold text-success">Field Guide &rarr;</a></div></div></div>
+      <div class="col-sm-6 col-lg-3"><div class="card h-100 shadow-sm"><div class="card-header bg-dark text-white py-1 small fw-semibold">River Giant</div><img src="images/hippos-crocs.jpg" class="card-img-top" alt="Wild hippos resting in river shallows" loading="lazy"><div class="card-body py-2"><h5 class="fw-bold text-success mb-1">Zambezi Hippo Pods</h5><span class="badge bg-info text-dark mb-2">Aquatic</span><p class="small text-muted mb-0">Large submerged family pods basking in river pools above Victoria Falls and Mara River channels.</p></div><div class="card-footer bg-light py-2"><a href="Wildlife.html" class="small fw-bold text-success">Field Guide &rarr;</a></div></div></div>
+      <div class="col-sm-6 col-lg-3"><div class="card h-100 shadow-sm"><div class="card-header bg-dark text-white py-1 small fw-semibold">Great Migration</div><img src="images/wildebeest-migration.jpg" class="card-img-top" alt="Wildebeest and zebras crossing river" loading="lazy"><div class="card-body py-2"><h5 class="fw-bold text-success mb-1">Wildebeest & Zebras</h5><span class="badge bg-success mb-2">1.5M Animals</span><p class="small text-muted mb-0">Perpetual circular migration following seasonal rain patterns and fresh sweet savannah grasses.</p></div><div class="card-footer bg-light py-2"><a href="Wildlife.html" class="small fw-bold text-success">Field Guide &rarr;</a></div></div></div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: 4 COLUMNS -->
+  <section class="mb-5">
+    <div class="mb-3">
+      <h2>Section 4: Specialists & Fast Grazers</h2>
+      <p class="text-muted mb-0">Remarkable species showcasing specialized adaptations for speed and browsing on the open plains.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3"><div class="card h-100 shadow-sm"><div class="card-header bg-dark text-white py-1 small fw-semibold">Speed Specialist</div><img src="images/cheetah.jpg" class="card-img-top" alt="Cheetah scanning open plains from a grassy mound" loading="lazy"><div class="card-body py-2"><h5 class="fw-bold text-success mb-1">East African Cheetah</h5><span class="badge bg-warning text-dark mb-2">0-100 km/h in 3s</span><p class="small text-muted mb-0">Solitary daylight hunters using elevated termite mounds to scan grasslands for Thomson gazelles.</p></div><div class="card-footer bg-light py-2"><a href="Wildlife.html" class="small fw-bold text-success">Field Guide &rarr;</a></div></div></div>
+      <div class="col-sm-6 col-lg-3"><div class="card h-100 shadow-sm"><div class="card-header bg-dark text-white py-1 small fw-semibold">Tallest Mammal</div><img src="images/maasai-giraffe.jpg" class="card-img-top" alt="Maasai giraffe browsing savannah acacia treetops" loading="lazy"><div class="card-body py-2"><h5 class="fw-bold text-success mb-1">Maasai Giraffe</h5><span class="badge bg-secondary mb-2">National Animal</span><p class="small text-muted mb-0">Gracefully feeding on thorny umbrella acacia treetops with specialized prehensile blue tongues.</p></div><div class="card-footer bg-light py-2"><a href="Wildlife.html" class="small fw-bold text-success">Field Guide &rarr;</a></div></div></div>
+      <div class="col-sm-6 col-lg-3"><div class="card h-100 shadow-sm"><div class="card-header bg-dark text-white py-1 small fw-semibold">River Megafauna</div><img src="images/hippos-crocs.jpg" class="card-img-top" alt="Pod of wild hippos in river water" loading="lazy"><div class="card-body py-2"><h5 class="fw-bold text-success mb-1">Mara River Pods</h5><span class="badge bg-primary mb-2">Semi-Aquatic</span><p class="small text-muted mb-0">Territorial dominant bulls and nursery pods maintaining river ecosystems and aquatic vegetation.</p></div><div class="card-footer bg-light py-2"><a href="Wildlife.html" class="small fw-bold text-success">Field Guide &rarr;</a></div></div></div>
+      <div class="col-sm-6 col-lg-3"><div class="card h-100 shadow-sm"><div class="card-header bg-dark text-white py-1 small fw-semibold">Plains Ungulates</div><img src="images/wildebeest-migration.jpg" class="card-img-top" alt="Zebra and wildebeest herd marching on savannah" loading="lazy"><div class="card-body py-2"><h5 class="fw-bold text-success mb-1">Burchell's Zebras</h5><span class="badge bg-dark mb-2">Herd Defense</span><p class="small text-muted mb-0">Striped sentinels grazing tough stem grasses before wildebeests feast on succulent green shoots.</p></div><div class="card-footer bg-light py-2"><a href="Wildlife.html" class="small fw-bold text-success">Field Guide &rarr;</a></div></div></div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: 3 COLUMNS -->
+  <section class="mb-5">
+    <div class="mb-3"><h2>Section 5: Day Excursions & Guided Treks</h2><p class="text-muted mb-0">Single-day immersive wildlife experiences led by certified TANAPA wilderness naturalists.</p></div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4"><div class="card h-100 shadow-sm"><div class="card-header bg-warning text-dark d-flex justify-content-between py-2"><span class="fw-semibold">Aerial Flight</span><span class="badge bg-dark">1 Day</span></div><img src="images/serengeti-savannah.jpg" class="card-img-top" alt="Hot air balloon floating at dawn over Serengeti plains" loading="lazy"><div class="card-body"><h5 class="fw-bold">Sunrise Balloon Safari</h5><p class="small text-muted">Float quietly over migrating herds at dawn, followed by a celebratory champagne bush breakfast.</p></div><div class="card-footer bg-light d-flex justify-content-between align-items-center"><span class="fw-bold text-success fs-5">$550 <span class="fs-6 text-muted fw-normal">/ person</span></span><a href="Tours.html" class="btn btn-outline-dark btn-sm">View Details</a></div></div></div>
+      <div class="col-md-6 col-lg-4"><div class="card h-100 shadow-sm"><div class="card-header bg-warning text-dark d-flex justify-content-between py-2"><span class="fw-semibold">Bush Tracking</span><span class="badge bg-danger">Half Day</span></div><img src="images/walking-safari.jpg" class="card-img-top" alt="Armed ranger leading hikers on foot through savannah" loading="lazy"><div class="card-body"><h5 class="fw-bold">Armed Ranger Walking Safari</h5><p class="small text-muted">Inspect fresh tracks, medicinal flora, and animal scent trails on foot with an armed park ranger.</p></div><div class="card-footer bg-light d-flex justify-content-between align-items-center"><span class="fw-bold text-success fs-5">$110 <span class="fs-6 text-muted fw-normal">/ person</span></span><a href="Tours.html" class="btn btn-outline-dark btn-sm">View Details</a></div></div></div>
+      <div class="col-md-6 col-lg-4"><div class="card h-100 shadow-sm"><div class="card-header bg-warning text-dark d-flex justify-content-between py-2"><span class="fw-semibold">Marine Voyage</span><span class="badge bg-info text-dark">Sunset Cruise</span></div><img src="images/sunset-dhow.jpg" class="card-img-top" alt="Traditional wooden dhow sailing into sunset" loading="lazy"><div class="card-body"><h5 class="fw-bold">Zanzibar Sunset Dhow Cruise</h5><p class="small text-muted">Handcrafted wooden dhow sailing into golden coastal sunsets with live Swahili melodies and fresh appetizers.</p></div><div class="card-footer bg-light d-flex justify-content-between align-items-center"><span class="fw-bold text-success fs-5">$85 <span class="fs-6 text-muted fw-normal">/ person</span></span><a href="Tours.html" class="btn btn-outline-dark btn-sm">View Details</a></div></div></div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: 4 COLUMNS -->
+  <section class="mb-5">
+    <div class="mb-3"><h2>Section 6: River & Canyon Adventures</h2><p class="text-muted mb-0">High-octane water expeditions and gorge explorations around the Zambezi basin.</p></div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3"><div class="card h-100 shadow-sm"><div class="card-header bg-danger text-white py-1 small fw-semibold">Class V Rapids</div><img src="images/zambezi-rafting.jpg" class="card-img-top" alt="Whitewater raft tackling rapids below Victoria Falls" loading="lazy"><div class="card-body py-2"><h5 class="fw-bold text-success mb-1">Zambezi Rafting</h5><span class="badge bg-warning text-dark mb-2">Adrenaline</span><p class="small text-muted mb-0">Conquer churning world-class rapids directly below Victoria Falls in Batoka Gorge.</p></div><div class="card-footer bg-light py-2"><span class="fw-bold text-success">$160</span></div></div></div>
+      <div class="col-sm-6 col-lg-3"><div class="card h-100 shadow-sm"><div class="card-header bg-dark text-white py-1 small fw-semibold">Scenic Gorge</div><img src="images/victoria-falls.jpg" class="card-img-top" alt="Batoka Gorge canyon rim and rainbow" loading="lazy"><div class="card-body py-2"><h5 class="fw-bold text-success mb-1">Batoka Canyon Hike</h5><span class="badge bg-success mb-2">Trek</span><p class="small text-muted mb-0">Hike along scenic basalt canyon rim trails overlooking the foaming Zambezi river cataracts.</p></div><div class="card-footer bg-light py-2"><span class="fw-bold text-success">$95</span></div></div></div>
+      <div class="col-sm-6 col-lg-3"><div class="card h-100 shadow-sm"><div class="card-header bg-dark text-white py-1 small fw-semibold">River Cruise</div><img src="images/hippos-crocs.jpg" class="card-img-top" alt="Hippos and water wildlife from boat" loading="lazy"><div class="card-body py-2"><h5 class="fw-bold text-success mb-1">Chobe Sunset Boat</h5><span class="badge bg-info text-dark mb-2">Relaxed</span><p class="small text-muted mb-0">Eye-level photography of elephant herds swimming across water channels and basking hippos.</p></div><div class="card-footer bg-light py-2"><span class="fw-bold text-success">$120</span></div></div></div>
+      <div class="col-sm-6 col-lg-3"><div class="card h-100 shadow-sm"><div class="card-header bg-dark text-white py-1 small fw-semibold">Historic Port</div><img src="images/zanzibar-beach.jpg" class="card-img-top" alt="Zanzibar Stone Town coast and boats" loading="lazy"><div class="card-body py-2"><h5 class="fw-bold text-success mb-1">Stone Town Heritage</h5><span class="badge bg-secondary mb-2">Culture</span><p class="small text-muted mb-0">Explore historic coral stone architecture, fragrant spice bazaars, and traditional Swahili harbor.</p></div><div class="card-footer bg-light py-2"><span class="fw-bold text-success">$65</span></div></div></div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: 3 COLUMNS -->
+  <section class="mb-5">
+    <div class="mb-3"><h2>Section 7: Tropical Coastal Sanctuaries</h2><p class="text-muted mb-0">Unwind on idyllic coral sand coastlines after your mainland savannah expeditions.</p></div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4"><div class="card h-100 shadow-sm"><div class="card-header bg-info text-dark d-flex justify-content-between py-2"><span class="fw-semibold">Marine Reserve</span><span class="badge bg-dark">Coral Atoll</span></div><img src="images/zanzibar-beach.jpg" class="card-img-top" alt="Turquoise Indian ocean coral reef and sands" loading="lazy"><div class="card-body"><h5 class="fw-bold">Mnemba Atoll Snorkeling</h5><p class="small text-muted">Swim among sea turtles and colorful coral reef species in protected crystal turquoise waters.</p></div><div class="card-footer bg-light d-flex justify-content-between align-items-center"><span class="fw-bold text-success fs-5">$140 <span class="fs-6 text-muted fw-normal">/ day</span></span><a href="Destinations.html" class="btn btn-outline-info btn-sm">Explore Coast</a></div></div></div>
+      <div class="col-md-6 col-lg-4"><div class="card h-100 shadow-sm"><div class="card-header bg-info text-dark d-flex justify-content-between py-2"><span class="fw-semibold">Island Sailing</span><span class="badge bg-dark">Private Yacht</span></div><img src="images/sunset-dhow.jpg" class="card-img-top" alt="Traditional sailing dhow along Zanzibar coast" loading="lazy"><div class="card-body"><h5 class="fw-bold">Prison Island Private Cruise</h5><p class="small text-muted">Visit historical giant Aldabra tortoise sanctuaries aboard private wooden Swahili sailing dhows.</p></div><div class="card-footer bg-light d-flex justify-content-between align-items-center"><span class="fw-bold text-success fs-5">$220 <span class="fs-6 text-muted fw-normal">/ day</span></span><a href="Destinations.html" class="btn btn-outline-info btn-sm">Explore Coast</a></div></div></div>
+      <div class="col-md-6 col-lg-4"><div class="card h-100 shadow-sm"><div class="card-header bg-info text-dark d-flex justify-content-between py-2"><span class="fw-semibold">Luxury Villa</span><span class="badge bg-dark">All-Inclusive</span></div><img src="images/zanzibar-villa.jpg" class="card-img-top" alt="Oceanfront private beach villa with pool deck" loading="lazy"><div class="card-body"><h5 class="fw-bold">Ocean Coral Beach Villa</h5><p class="small text-muted">Private plunge pool steps from warm tropical waters, private chef, and bespoke Swahili dinners.</p></div><div class="card-footer bg-light d-flex justify-content-between align-items-center"><span class="fw-bold text-success fs-5">$490 <span class="fs-6 text-muted fw-normal">/ night</span></span><a href="ContactUs.html" class="btn btn-success btn-sm">Reserve Villa</a></div></div></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer-custom pt-5 pb-4">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6"><h5 class="text-white fw-bold mb-2">Serengeti Wonders Sanctuary</h5><p class="text-secondary small mb-2">Curating bespoke luxury expeditions across Serengeti, Ngorongoro, Victoria Falls & Zanzibar. Licensed eco-tourism and leave-no-trace principles.</p></div>
+      <div class="col-lg-2 col-md-6"><h5 class="text-white fw-bold mb-2">Quick Links</h5><ul class="list-unstyled text-secondary small mb-0"><li><a href="index.html" class="text-secondary">Home</a></li><li><a href="Destinations.html" class="text-secondary">Destinations</a></li><li><a href="Tours.html" class="text-secondary">All Tours</a></li><li><a href="Wildlife.html" class="text-secondary">Wildlife</a></li><li><a href="ContactUs.html" class="text-secondary">Contact Us</a></li></ul></div>
+      <div class="col-lg-3 col-md-6"><h5 class="text-white fw-bold mb-2">Contact Info</h5><p class="small text-secondary mb-1">Seronera Center, Serengeti NP, Tanzania</p><p class="small text-secondary mb-0">Email: safari@serengetiwonders.org</p><p class="small text-secondary mb-0">Phone: +255 27 250 8888</p></div>
+      <div class="col-lg-3 col-md-6"><h5 class="text-white fw-bold mb-2">Connect With Us</h5><div class="d-flex gap-3 mb-2"><a href="https://facebook.com" class="text-secondary"><i class="bi bi-facebook fs-5"></i> Facebook</a><a href="https://instagram.com" class="text-secondary"><i class="bi bi-instagram fs-5"></i> Instagram</a></div><span class="badge bg-success p-2">Official Tourism Board Partner</span></div>
+    </div>
+    <hr class="border-secondary my-3"><div class="d-flex justify-content-between small text-secondary"><span>&copy; 2026 Serengeti Wonders Tourist Attraction Ltd. All Rights Reserved.</span><span><a href="#" class="text-secondary">Privacy & Terms</a></span></div>
+  </div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

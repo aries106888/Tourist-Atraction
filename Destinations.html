@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Serengeti Wonders — Africa's Revered Sanctuaries & Destinations</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<style>
+:root {
+    --primary: #1b3826;
+    --secondary: #d97706;
+    --gold: #ffc107;
+}
+body {
+    background-color: #fbfbf9;
+    color: #333333;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+h1 {
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+h2 {
+    color: #1b3826;
+    font-weight: 700;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+p {
+    line-height: 1.6;
+    color: #4b5563;
+}
+a {
+    text-decoration: none;
+    color: #1b3826;
+    transition: all 0.2s ease-in-out;
+}
+a:hover {
+    color: #d97706;
+}
+.hero-band { background: linear-gradient(135deg, #1b3826 0%, #10241a 100%); color: #fff; }
+.contact-card { background: #ffffff; border-radius: 10px; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 4px 14px rgba(0,0,0,0.05); }
+.gate-box { background: #eef3ef; border-radius: 8px; border-left: 4px solid #1b3826; }
+.footer-custom { background-color: #17231c; color: #d1d5db; }
+.filter-pill { background: rgba(255,255,255,0.12); color: #fff; border: 1px solid rgba(255,255,255,0.25); border-radius: 20px; padding: 5px 14px; font-weight: 600; font-size: 0.85rem; cursor: pointer; transition: 0.2s; }
+.filter-pill.active, .filter-pill:hover { background: var(--gold); color: #1b3826; border-color: var(--gold); }
+.card { transition: transform 0.25s, box-shadow 0.25s; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; overflow: hidden; }
+.card:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(0,0,0,0.12) !important; }
+.card-img-h { height: 185px; object-fit: cover; }
+.img-caption { font-size: 0.75rem; color: #6b7280; font-style: italic; padding: 4px 12px 0; }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:#1b3826;">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center text-white" href="index.html"><i class="bi bi-compass-fill text-warning me-2 fs-3"></i><span class="fw-bold">Serengeti Wonders</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link text-white-50" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-warning active fw-semibold" href="Destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link text-white-50" href="Tours.html">All Tours</a></li>
+        <li class="nav-item"><a class="nav-link text-white-50" href="Wildlife.html">Wildlife</a></li>
+        <li class="nav-item"><a class="nav-link text-white-50" href="ContactUs.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero-band py-5">
+  <div class="container">
+    <div class="row align-items-center mb-4">
+      <div class="col-lg-8">
+        <span class="badge bg-warning text-dark mb-2 px-3 py-2 text-uppercase fw-bold"><i class="bi bi-compass"></i> Sanctuary Directory</span>
+        <h1 class="display-5">Africa's Most Revered National Sanctuaries</h1>
+        <p class="lead mb-0 text-white-50">Curated wildlife expeditions, luxury savannah lodges, and scenic wonders arranged for ethical encounters.</p>
+      </div>
+      <div class="col-lg-4 d-flex gap-3 justify-content-lg-end mt-4 mt-lg-0">
+        <div class="bg-white bg-opacity-10 p-3 rounded text-center"><div class="h3 fw-bold text-warning mb-0">4</div><div class="small">Iconic Zones</div></div>
+        <div class="bg-white bg-opacity-10 p-3 rounded text-center"><div class="h3 fw-bold text-warning mb-0">100%</div><div class="small">Ethical Safari</div></div>
+      </div>
+    </div>
+    <div class="d-flex flex-wrap gap-2 align-items-center pt-2">
+      <button class="filter-pill active" onclick="filterDest('all', this)">All Sanctuaries</button>
+      <button class="filter-pill" onclick="filterDest('tanzania', this)">Northern Circuit (Tanzania)</button>
+      <button class="filter-pill" onclick="filterDest('zambezi', this)">Victoria Falls & Chobe</button>
+      <button class="filter-pill" onclick="filterDest('kili', this)">Kilimanjaro Caldera</button>
+      <button class="filter-pill" onclick="filterDest('zanzibar', this)">Zanzibar Coast</button>
+    </div>
+  </div>
+</section>
+
+<main class="container py-5">
+  <div class="mb-4"><h2>Premier Wildlife Reserves & Circuits</h2>
+    <p>Protected wilderness migration corridors maintained under official TANAPA conservation standards.</p></div>
+  <div class="row g-4" id="destGrid">
+    <div class="col-md-6 col-lg-4 dest-item" data-cat="tanzania"><div class="card h-100 shadow-sm">
+      <div class="card-header bg-dark text-white d-flex justify-content-between py-2">
+        <span class="fw-semibold">Northern Circuit</span><span class="badge bg-warning text-dark">Bestseller</span>
+      </div>
+      <img src="images/serengeti-savannah.jpg" class="card-img-top card-img-h" alt="Golden sunrise glowing across endless acacia grassland plains of Serengeti National Park with hot air balloon" loading="lazy"><div class="img-caption">Serengeti Savannah at sunrise with balloon</div>
+      <div class="card-body"><h5 class="fw-bold text-success">Serengeti & Ngorongoro Crater</h5>
+        <p class="small">Vast volcanic caldera with dense predator populations, followed by three days navigating endless Serengeti grasslands.</p>
+        <ul class="list-unstyled small text-muted mb-2">
+          <li><i class="bi bi-rulers text-success"></i> Rim Elevation: <strong>3,648m</strong></li>
+          <li><i class="bi bi-people text-success"></i> Guide Ratio: <strong>1 Guide : 4 Trekkers</strong></li>
+        </ul>
+        <div class="d-flex justify-content-between align-items-center"><span class="small text-muted"><i class="bi bi-clock"></i> 7 Days / 6 Nights</span>
+        <span class="fw-bold text-success fs-5">$2,450</span>
+      </div></div>
+      <div class="card-footer bg-light d-flex justify-content-between align-items-center py-2"><span class="badge bg-success-subtle text-success">Tanzania</span><button class="btn btn-outline-success btn-sm" onclick="openReserve('Serengeti & Ngorongoro', 2450)">Reserve Slot</button></div>
+    </div></div>
+
+    <div class="col-md-6 col-lg-4 dest-item" data-cat="zambezi"><div class="card h-100 shadow-sm">
+      <div class="card-header bg-dark text-white d-flex justify-content-between py-2"><span class="fw-semibold">Scenic Cataracts</span>
+      <span class="badge bg-info text-dark">River Safari</span>
+    </div>
+      <img src="images/victoria-falls.jpg" class="card-img-top card-img-h" alt="High-volume roaring waterfall cascades plunging into Batoka Gorge canyon with vibrant rainbows" loading="lazy"><div class="img-caption">Victoria Falls & canyon cascades</div>
+      <div class="card-body"><h5 class="fw-bold text-success">Victoria Falls & Chobe Sanctuary</h5>
+        <p class="small">High-volume falls views paired with riverboat game viewing among hundreds of Chobe riverfront elephants.</p>
+        <ul class="list-unstyled small text-muted mb-2">
+          <li><i class="bi bi-rulers text-success"></i> Zambezi River Frontage</li><li><i class="bi bi-people text-success"></i> Guide Ratio: <strong>1 Guide : 6 Trekkers</strong></li></ul>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="small text-muted"><i class="bi bi-clock"></i> 5 Days / 4 Nights</span>
+          <span class="fw-bold text-success fs-5">$1,880</span></div></div>
+      <div class="card-footer bg-light d-flex justify-content-between align-items-center py-2">
+      <span class="badge bg-info-subtle text-info">Zambia / Botswana</span>
+      <button class="btn btn-outline-success btn-sm" onclick="openReserve('Victoria Falls & Chobe', 1880)">Reserve Slot</button></div>
+    </div></div>
+
+    <div class="col-md-6 col-lg-4 dest-item" data-cat="kili"><div class="card h-100 shadow-sm">
+      <div class="card-header bg-dark text-white d-flex justify-content-between py-2"><span class="fw-semibold">Roof of Africa</span><span class="badge bg-success">Adventure</span></div>
+      <img src="images/kilimanjaro-elephants.jpg" class="card-img-top card-img-h" alt="African bush elephants moving across savannah beneath snow-capped Mount Kilimanjaro" loading="lazy"><div class="img-caption">Elephants beneath Mount Kilimanjaro</div>
+      <div class="card-body">
+        <h5 class="fw-bold text-success">Mount Kilimanjaro Machame Route</h5>
+        <p class="small">Climb through five climatic zones from rainforest to arctic glacier peak at Uhuru Peak (5,895m) led by certified mountain guides.</p>
+        <ul class="list-unstyled small text-muted mb-2">
+          <li><i class="bi bi-rulers text-success"></i> Uhuru Peak Summit (5,895m)</li>
+          <li><i class="bi bi-people text-success"></i> Guide Ratio: <strong>1 Guide : 2 Trekkers</strong></li>
+        </ul>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="small text-muted"><i class="bi bi-clock"></i> 8 Days / 7 Nights</span>
+          <span class="fw-bold text-success fs-5">$2,190</span></div>
+        </div>
+      <div class="card-footer bg-light d-flex justify-content-between align-items-center py-2"><span class="badge bg-success-subtle text-success">Kilimanjaro NP</span><button class="btn btn-outline-success btn-sm" onclick="openReserve('Kilimanjaro Machame Trek', 2190)">Reserve Slot</button></div>
+    </div></div>
+
+    <div class="col-md-6 col-lg-4 dest-item" data-cat="zanzibar"><div class="card h-100 shadow-sm">
+      <div class="card-header bg-dark text-white d-flex justify-content-between py-2"><span class="fw-semibold">Swahili Coast</span><span class="badge bg-warning text-dark">Marine Reserve</span></div>
+      <img src="images/zanzibar-beach.jpg" class="card-img-top card-img-h" alt="Pristine white powder coral sand beach meeting crystal turquoise Indian Ocean with wooden dhows" loading="lazy"><div class="img-caption">Zanzibar turquoise coral coast</div>
+      <div class="card-body"><h5 class="fw-bold text-success">Zanzibar Coral Coast & Stone Town</h5><p class="small">Turquoise ocean waters, powder sands, private catamaran sailing, and UNESCO spice stone town architecture.</p>
+        <ul class="list-unstyled small text-muted mb-2"><li><i class="bi bi-water text-success"></i> Indian Ocean Marine Corridor</li><li><i class="bi bi-people text-success"></i> Guide Ratio: <strong>Private Skipper</strong></li></ul>
+        <div class="d-flex justify-content-between align-items-center"><span class="small text-muted"><i class="bi bi-clock"></i> 4 Days / 3 Nights</span><span class="fw-bold text-success fs-5">$1,450</span></div></div>
+      <div class="card-footer bg-light d-flex justify-content-between align-items-center py-2"><span class="badge bg-warning-subtle text-warning">Zanzibar Island</span><button class="btn btn-outline-success btn-sm" onclick="openReserve('Zanzibar Coastal Escape', 1450)">Reserve Slot</button></div>
+    </div></div>
+  </div>
+</main>
+
+<!-- Modal -->
+<div class="modal fade" id="destModal" tabindex="-1"><div class="modal-dialog"><div class="modal-content"><div class="modal-header bg-success text-white"><h5 class="modal-title fw-bold text-white" id="dmTitle">Reserve Sanctuary Slot</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div class="modal-body"><form onsubmit="event.preventDefault(); alert('Inquiry submitted! We will send you circuit itinerary details within 24h.'); bootstrap.Modal.getInstance(document.getElementById('destModal')).hide();"><div class="mb-2"><label class="form-label small fw-bold">Destination</label><input type="text" id="dmName" class="form-control form-control-sm" readonly></div><div class="row g-2 mb-2"><div class="col-6"><label class="form-label small fw-bold">Travelers</label><input type="number" id="dmGuests" class="form-control form-control-sm" value="2" min="1" onchange="calcDmTotal()"></div><div class="col-6"><label class="form-label small fw-bold">Departure</label><input type="date" class="form-control form-control-sm" required></div></div><div class="mb-2"><input type="text" class="form-control form-control-sm mb-1" placeholder="Your Name" required><input type="email" class="form-control form-control-sm" placeholder="Email Address" required></div><div class="p-2 bg-light rounded d-flex justify-content-between mb-3"><span class="small fw-semibold">Estimated Total:</span><span id="dmTotal" class="h5 mb-0 fw-bold text-success">$4,900</span></div><button type="submit" class="btn btn-warning w-100 fw-bold text-dark">Confirm Sanctuary Slot</button></form></div></div></div></div>
+
+<footer class="footer-custom pt-4 pb-3 mt-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6"><h6 class="text-white fw-bold mb-2"><i class="bi bi-compass text-warning me-2"></i>Serengeti Wonders Sanctuary</h6><p class="text-secondary small mb-2">Showcasing the biodiversity and heritage of East & Southern Africa. Licensed eco-tourism, leave-no-trace principles.</p></div>
+      <div class="col-lg-2 col-md-6"><h6 class="text-white fw-bold mb-2">Explore</h6><ul class="list-unstyled text-secondary small mb-0"><li><a href="index.html" class="text-secondary">Home</a></li><li><a href="Destinations.html" class="text-secondary">Destinations</a></li><li><a href="Tours.html" class="text-secondary">All Tours</a></li><li><a href="Wildlife.html" class="text-secondary">Wildlife</a></li><li><a href="ContactUs.html" class="text-secondary">Contact Us</a></li></ul></div>
+      <div class="col-lg-3 col-md-6"><h6 class="text-white fw-bold mb-2">Park Gates</h6><p class="small text-secondary mb-1">Naabi Hill & Fort Ikoma: 06:00 – 18:30 EAT</p><span class="badge bg-success p-2">Official Tourism Board Partner</span></div>
+      <div class="col-lg-3 col-md-6"><h6 class="text-white fw-bold mb-2">Direct Booking</h6><p class="small text-secondary mb-1">+255 27 250 8888</p><p class="small text-secondary mb-0">safari@serengetiwonders.org</p></div>
+    </div>
+    <hr class="border-secondary my-3"><div class="d-flex justify-content-between small text-secondary">
+      <span>&copy; 2026 Serengeti Wonders Tourist Attraction Ltd.</span><span><a href="#" class="text-secondary">Conservation Pledge</a></span></div>
+  </div>
+</footer>
+
+</body>
+</html>

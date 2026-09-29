@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Serengeti Wonders — Safari Tours & Guided Expeditions</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<style>
+:root {
+    --primary: #1b3826;
+    --secondary: #d97706;
+    --gold: #ffc107;
+}
+body {
+    background-color: #fbfbf9;
+    color: #333333;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+h1 {
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+h2 {
+    color: #1b3826;
+    font-weight: 700;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+p {
+    line-height: 1.6;
+    color: #4b5563;
+}
+a {
+    text-decoration: none;
+    color: #1b3826;
+    transition: all 0.2s ease-in-out;
+}
+a:hover {
+    color: #d97706;
+}
+.hero-band { background: linear-gradient(135deg, #1b3826 0%, #10241a 100%); color: #fff; }
+.contact-card { background: #ffffff; border-radius: 10px; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 4px 14px rgba(0,0,0,0.05); }
+.gate-box { background: #eef3ef; border-radius: 8px; border-left: 4px solid #1b3826; }
+.footer-custom { background-color: #17231c; color: #d1d5db; }
+.card { transition: transform 0.25s ease, box-shadow 0.25s ease; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; overflow: hidden; }
+.card:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(0,0,0,0.12) !important; }
+.card-img-top { height: 185px; object-fit: cover; }
+.filter-btn { border-radius: 20px; font-weight: 600; font-size: 0.85rem; padding: 5px 14px; cursor: pointer; background: rgba(255,255,255,0.12); color: #fff; border: 1px solid rgba(255,255,255,0.25); }
+.filter-btn.active, .filter-btn:hover { background: #ffc107; color: #1b3826; border-color: #ffc107; }
+.img-caption { font-size: 0.75rem; color: #6b7280; font-style: italic; padding: 4px 12px 0; }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:#1d3b28;">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center text-white" href="index.html"><i class="bi bi-compass-fill text-warning me-2 fs-3"></i><span class="fw-bold">Serengeti Wonders</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link text-white-50" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white-50" href="Destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link text-warning fw-semibold active" href="Tours.html">All Tours</a></li>
+        <li class="nav-item"><a class="nav-link text-white-50" href="Wildlife.html">Wildlife</a></li>
+        <li class="nav-item"><a class="nav-link text-white-50" href="ContactUs.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero-band py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <span class="badge bg-warning text-dark mb-2 px-3 py-2 text-uppercase fw-bold"><i class="bi bi-compass"></i> Handcrafted Safaris</span>
+        <h1 class="display-5">Tours & Guided Expeditions</h1>
+        <p class="lead mb-0 text-white-50">Compare authentic safari circuits, thrilling day excursions, balloon flights, and marine cruises.</p>
+      </div>
+      <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+        <span class="badge bg-success p-2 fs-6"><i class="bi bi-check-circle-fill text-warning"></i> 100% Ethical TANAPA Partner</span>
+      </div>
+    </div>
+    <div class="d-flex flex-wrap gap-2 align-items-center mt-4 pt-2">
+      <button class="filter-btn active" onclick="setTourFilter('all', this)">All Expeditions</button>
+      <button class="filter-btn" onclick="setTourFilter('circuit', this)">Multi-Day Circuits</button>
+      <button class="filter-btn" onclick="setTourFilter('adventure', this)">Day Excursions</button>
+      <button class="filter-btn" onclick="setTourFilter('marine', this)">River & Marine</button>
+    </div>
+  </div>
+</section>
+
+<main class="container py-5">
+  <div class="mb-4"><h2>Featured Itineraries & Excursions</h2><p>Curated itineraries led by certified local wilderness experts with low-impact 4x4 vehicles.</p></div>
+  <div class="row g-4" id="toursRow">
+    <div class="col-md-6 col-lg-4 tour-item" data-cat="circuit"><div class="card h-100 shadow-sm">
+      <div class="card-header bg-dark text-white d-flex justify-content-between py-2"><span class="fw-semibold">7 Days / 6 Nights</span><span class="badge bg-warning text-dark">Bestseller</span></div>
+      <img src="images/serengeti-savannah.jpg" class="card-img-top" alt="Golden sunrise glowing across endless acacia grassland plains of Serengeti with hot air balloon floating gently over grazing wildlife" loading="lazy"><div class="img-caption">Serengeti Savannah migration circuit</div>
+      <div class="card-body"><h5 class="fw-bold text-success">Serengeti & Ngorongoro Crater</h5>
+        <p class="small text-muted">Volcanic caldera descent with dense lion prides, followed by three days on the boundless golden Serengeti plains.</p><div class="fw-bold text-success fs-5 mb-2">$2,450 <span class="fs-6 fw-normal text-muted">/ person</span></div><button class="btn btn-success btn-sm w-100" onclick="openTourBook('Serengeti & Ngorongoro', 2450)">Book Expedition</button></div>
+    </div></div>
+
+    <div class="col-md-6 col-lg-4 tour-item" data-cat="circuit"><div class="card h-100 shadow-sm">
+      <div class="card-header bg-dark text-white d-flex justify-content-between py-2"><span class="fw-semibold">5 Days / 4 Nights</span><span class="badge bg-info text-dark">Scenic Wonder</span></div>
+      <img src="images/victoria-falls.jpg" class="card-img-top" alt="High-volume roaring waterfall cascades plunging into Batoka Gorge canyon with vibrant rainbows" loading="lazy"><div class="img-caption">Victoria Falls & Zambezi cataract</div>
+      <div class="card-body"><h5 class="fw-bold text-success">Victoria Falls & Chobe Sanctuary</h5>
+        <p class="small text-muted">Roaring cataract panoramas combined with afternoon riverboat game cruises among Chobe elephant herds.</p><div class="fw-bold text-success fs-5 mb-2">$1,880 <span class="fs-6 fw-normal text-muted">/ person</span></div><button class="btn btn-success btn-sm w-100" onclick="openTourBook('Victoria Falls & Chobe', 1880)">Book Expedition</button></div>
+    </div></div>
+
+    <div class="col-md-6 col-lg-4 tour-item" data-cat="circuit"><div class="card h-100 shadow-sm">
+      <div class="card-header bg-dark text-white d-flex justify-content-between py-2"><span class="fw-semibold">8 Days / 7 Nights</span><span class="badge bg-success">Summit Trek</span></div>
+      <img src="images/kilimanjaro-elephants.jpg" class="card-img-top" alt="A family matriarch herd of African bush elephants moving across savannah beneath snow-capped Mount Kilimanjaro" loading="lazy"><div class="img-caption">Mount Kilimanjaro & elephant savannah</div>
+      <div class="card-body"><h5 class="fw-bold text-success">Mount Kilimanjaro Machame Route</h5>
+        <p class="small text-muted">Traverse five distinct climate zones from lush rainforest to the arctic glacier summit at Uhuru Peak (5,895m).</p><div class="fw-bold text-success fs-5 mb-2">$2,190 <span class="fs-6 fw-normal text-muted">/ person</span></div><button class="btn btn-success btn-sm w-100" onclick="openTourBook('Kilimanjaro Trek', 2190)">Book Expedition</button></div>
+    </div></div>
+
+    <div class="col-md-6 col-lg-4 tour-item" data-cat="adventure"><div class="card h-100 shadow-sm">
+      <div class="card-header bg-warning text-dark d-flex justify-content-between py-2"><span class="fw-semibold">1 Day Excursion</span><span class="badge bg-dark">Aerial</span></div>
+      <img src="images/serengeti-savannah.jpg" class="card-img-top" alt="Golden sunrise glowing across endless acacia grassland plains of Serengeti with hot air balloon floating gently" loading="lazy"><div class="img-caption">Hot air balloon over Serengeti sunrise</div>
+      <div class="card-body"><h5 class="fw-bold">Serengeti Sunrise Balloon Flight</h5>
+        <p class="small text-muted">Float at dawn over migrating herds, followed by a celebratory champagne breakfast served in the open bush.</p><div class="fw-bold text-success fs-5 mb-2">$550 <span class="fs-6 fw-normal text-muted">/ person</span></div><button class="btn btn-success btn-sm w-100" onclick="openTourBook('Sunrise Balloon Flight', 550)">Book Expedition</button></div>
+    </div></div>
+
+    <div class="col-md-6 col-lg-4 tour-item" data-cat="adventure"><div class="card h-100 shadow-sm">
+      <div class="card-header bg-warning text-dark d-flex justify-content-between py-2"><span class="fw-semibold">Half Day Trek</span><span class="badge bg-danger">Wilderness</span></div>
+      <img src="images/walking-safari.jpg" class="card-img-top" alt="Professional armed park ranger leading adventurous trekkers on foot along an authentic bush game trail" loading="lazy"><div class="img-caption">Guided walking safari on foot</div>
+      <div class="card-body"><h5 class="fw-bold">Armed Ranger Walking Safari</h5>
+        <p class="small text-muted">Study fresh tracking footprints, native medicinal flora, and wild scents on foot with armed TANAPA rangers.</p><div class="fw-bold text-success fs-5 mb-2">$110 <span class="fs-6 fw-normal text-muted">/ person</span></div><button class="btn btn-success btn-sm w-100" onclick="openTourBook('Walking Safari', 110)">Book Expedition</button></div>
+    </div></div>
+
+    <div class="col-md-6 col-lg-4 tour-item" data-cat="marine"><div class="card h-100 shadow-sm">
+      <div class="card-header bg-warning text-dark d-flex justify-content-between py-2"><span class="fw-semibold">1 Day Cruise</span><span class="badge bg-info text-dark">Marine</span></div>
+      <img src="images/sunset-dhow.jpg" class="card-img-top" alt="Traditional Swahili wooden sailing dhow with white sail cruising along the Zanzibar coral coast into a golden sunset" loading="lazy"><div class="img-caption">Sunset wooden dhow sailing in Zanzibar</div>
+      <div class="card-body"><h5 class="fw-bold">Zanzibar Sunset Dhow Sailing</h5>
+        <p class="small text-muted">Handcrafted wooden dhow excursion along turquoise coral shores, live Taarab melody, and fresh grilled seafood.</p><div class="fw-bold text-success fs-5 mb-2">$85 <span class="fs-6 fw-normal text-muted">/ person</span></div><button class="btn btn-success btn-sm w-100" onclick="openTourBook('Sunset Dhow Sailing', 85)">Book Expedition</button></div>
+    </div></div>
+  </div>
+</main>
+
+<!-- Tour Booking Modal with Form -->
+<div class="modal fade" id="tourModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title fw-bold text-white" id="tmTitle">Book Safari Expedition</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form onsubmit="event.preventDefault(); alert('Inquiry received! Our safari directors will contact you.'); bootstrap.Modal.getInstance(document.getElementById('tourModal')).hide();">
+          <div class="mb-2">
+            <label class="form-label small fw-bold">Tour Selected</label>
+            <input type="text" id="tmSelectedTour" class="form-control form-control-sm" readonly>
+          </div>
+          <div class="row g-2 mb-2">
+            <div class="col-6">
+              <label class="form-label small fw-bold">Travelers</label>
+              <input type="number" id="tmTravelers" class="form-control form-control-sm" value="2" min="1" max="20" onchange="calcTmQuote()">
+            </div>
+            <div class="col-6">
+              <label class="form-label small fw-bold">Departure Date</label>
+              <input type="date" class="form-control form-control-sm" required>
+            </div>
+          </div>
+          <div class="mb-2">
+            <label class="form-label small fw-bold">Your Contact</label>
+            <input type="text" class="form-control form-control-sm mb-1" placeholder="Lead Traveler Full Name" required>
+            <input type="email" class="form-control form-control-sm" placeholder="Email Address" required>
+          </div>
+          <div class="p-2 bg-light rounded d-flex justify-content-between align-items-center mb-3">
+            <span class="small fw-semibold">Estimated Total:</span>
+            <span id="tmQuoteTotal" class="h5 mb-0 fw-bold text-success">$4,900</span>
+          </div>
+          <button type="submit" class="btn btn-warning w-100 fw-bold text-dark">Submit Tour Reservation</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer-custom pt-4 pb-3 mt-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6"><h6 class="text-white fw-bold mb-2"><i class="bi bi-compass text-warning me-2"></i>Serengeti Wonders Sanctuary</h6><p class="text-secondary small mb-2">Dedicated to ethical, low-impact luxury wilderness tours across East & Southern Africa.</p></div>
+      <div class="col-lg-2 col-md-6"><h6 class="text-white fw-bold mb-2">Explore</h6><ul class="list-unstyled text-secondary small mb-0"><li><a href="index.html" class="text-secondary">Home</a></li><li><a href="Destinations.html" class="text-secondary">Destinations</a></li><li><a href="Tours.html" class="text-secondary">All Tours</a></li><li><a href="Wildlife.html" class="text-secondary">Wildlife</a></li><li><a href="ContactUs.html" class="text-secondary">Contact Us</a></li></ul></div>
+      <div class="col-lg-3 col-md-6"><h6 class="text-white fw-bold mb-2">Direct Contact</h6><p class="small text-secondary mb-1">Seronera Information Center, Tanzania</p><p class="small text-secondary mb-0">tours@serengetiwonders.org</p></div>
+      <div class="col-lg-3 col-md-6"><h6 class="text-white fw-bold mb-2">Park Gates</h6><p class="small text-secondary mb-1">Daily Entry: 06:00 – 18:30 EAT</p><span class="badge bg-success p-2">Official Tourism Board Partner</span></div>
+    </div>
+    <hr class="border-secondary my-3"><div class="d-flex justify-content-between small text-secondary"><span>&copy; 2026 Serengeti Wonders Tourist Attraction Ltd.</span><span><a href="#" class="text-secondary">Conservation Pledge</a></span></div>
+  </div>
+</footer>
+
+</body>
+</html>
